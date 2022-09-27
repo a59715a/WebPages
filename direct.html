@@ -1,9 +1,16 @@
-<body onload="QQ();">
+<body onload="QQ();window.close();">
+
 <script>
+
 	function QQ() {
 		var sUrl = request("url");
 		document.location.href=sUrl;
+		
+		
 	}
+
+    
+
 
 function request(paras) {
     var url = location.href;

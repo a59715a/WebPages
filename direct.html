@@ -1,11 +1,13 @@
-<body onload="QQ();window.close();">
-
+<body onload="QQ();">
+<h1>direct</h1>
 <script>
 
 	function QQ() {
 		var sUrl = request("url");
 		document.location.href=sUrl;
-		
+		setTimeout(() => {
+			window.close();
+		},0);
 		
 	}
 

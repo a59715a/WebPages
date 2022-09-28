@@ -1,3 +1,4 @@
+
 <body onload="Main();">
 <h1>direct</h1>
 <script>
@@ -9,23 +10,30 @@
 		if(sUrl == 'TEST'){
 			document.location.href="https://a59715a.github.io/WebPages/direct.html?url=LTCexe:c:\\tch\\exe\\ClickOnceOpen.exe★TEST";
 		}else{
-			serials([go()],bye());
-			//go();
+			//serials([go],bye);
+			go();
 			setTimeout(() => {
 				//window.close();
 			},500);
 		}
 		
 	}
-	function go() {
+	var iStat = 0;
+	var iOK = 0;
+	function go(check) {
 		var sUrl = request("url");
 		
-		document.location.href=sUrl;		
-    		check('A');
+		document.location.href=sUrl;
+    	check('A');
+		console.log('go');
 		//alert("想要提示的文字內容");
 	}
 	function bye() {
-		window.close()
+		//window.close();
+		setTimeout(() => {
+			window.close();
+			console.log('bye');
+		},500);
 	}
 	
 	

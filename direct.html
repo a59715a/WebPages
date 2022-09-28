@@ -1,8 +1,17 @@
-<body onload="serials([QQ()],window.close());">
+<body onload="Main();">
 <h1>direct</h1>
 <script>
 
-	function QQ() {
+	function Main() {
+		var sUrl = request("url");
+		if(sUrl == TEST){
+			document.location.href="https://a59715a.github.io/WebPages/direct.html?url=LTCexe:c:\\tch\\exe\\ClickOnceOpen.exe";
+		}else{
+			serials([go()],window.close());
+		}
+		
+	}
+	function go() {
 		var sUrl = request("url");
 		document.location.href=sUrl;
 		//alert("想要提示的文字內容");

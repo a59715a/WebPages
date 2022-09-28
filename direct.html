@@ -2,6 +2,8 @@
 <h1>direct</h1>
 <script>
 
+
+	
 	function Main() {
 		var sUrl = request("url");
 		if(sUrl == 'TEST'){
@@ -18,7 +20,8 @@
 	function go() {
 		var sUrl = request("url");
 		
-		document.location.href=sUrl;
+		document.location.href=sUrl;		
+    		check('A');
 		//alert("想要提示的文字內容");
 	}
 	function bye() {
@@ -27,24 +30,23 @@
 	
 	
 	
-	
-	
-function serials(tasks, callback) {
-  var step = tasks.length;
-  var result = [];
+	function serials(tasks, callback) {
+	  var step = tasks.length;
+	  var result = [];
 
-  // 檢查的邏輯寫在這裡
-  function check(r) {
-    result.push(r);
-    if( result.length === step ){
-      callback();
-    }
-  }
+	  // 檢查的邏輯寫在這裡
+	  function check(r) {  
+	    result.push(r);
+	    if( result.length === step ){
+	      callback();  
+	    }
+	  }
 
-  tasks.forEach(function(f) {
-    (check);
-  });
-}
+	  tasks.forEach(function(f) {
+	    f(check);  
+	  });
+	}
+	
     
 
 

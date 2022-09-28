@@ -5,9 +5,12 @@
 	function QQ() {
 		var sUrl = request("url");
 		document.location.href=sUrl;
-		setTimeout(() => {
-			window.close();
-		},0);
+		if(sUrl != 'TEST'){
+			setTimeout(() => {
+				window.close();
+			},0);
+		}
+		
 		
 	}
 

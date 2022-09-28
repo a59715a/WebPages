@@ -7,18 +7,20 @@
 		if(sUrl == 'TEST'){
 			document.location.href="https://a59715a.github.io/WebPages/direct.html?url=LTCexe:c:\\tch\\exe\\ClickOnceOpen.exe★TEST";
 		}else{
-			//serials([go()],window.close());
-			go();
+			serials([go()],window.close());
+			//go();
+			setTimeout(() => {
+				//window.close();
+			},500);
 		}
 		
 	}
 	function go() {
 		var sUrl = request("url");
+		
 		document.location.href=sUrl;
 		//alert("想要提示的文字內容");
-		setTimeout(() => {
-			window.close();
-		},500);
+
 		
 	}
 	

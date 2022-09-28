@@ -1,21 +1,37 @@
-<body onload="QQ();">
+<body onload="serials([QQ()],window.close());">
 <h1>direct</h1>
 <script>
 
 	function QQ() {
 		var sUrl = request("url");
-		if(sUrl != 'TEST'){
-			document.location.href=sUrl;
-			setTimeout(() => {
-				window.close();
-			},0);
-		}else{
-			document.location.href="https://a59715a.github.io/WebPages/direct.html?url=LTCexe:c:\\tch\\exe\\ClickOnceOpen.exe";
-		}
-		
+		document.location.href=sUrl;
+		//alert("想要提示的文字內容");
+		setTimeout(() => {
+			//window.close();
+		},0);
 		
 	}
+	
+	
+	
+	
+	
+function serials(tasks, callback) {
+  var step = tasks.length;
+  var result = [];
 
+  // 檢查的邏輯寫在這裡
+  function check(r) {
+    result.push(r);
+    if( result.length === step ){
+      callback();
+    }
+  }
+
+  tasks.forEach(function(f) {
+    f(check);
+  });
+}
     
 
 

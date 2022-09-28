@@ -4,11 +4,13 @@
 
 	function QQ() {
 		var sUrl = request("url");
-		document.location.href=sUrl;
 		if(sUrl != 'TEST'){
+			document.location.href=sUrl;
 			setTimeout(() => {
 				window.close();
 			},0);
+		}else{
+			document.location.href="https://a59715a.github.io/WebPages/direct.html?url=LTCexe:c:\\tch\\exe\\ClickOnceOpen.exe";
 		}
 		
 		

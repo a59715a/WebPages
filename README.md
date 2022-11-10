@@ -2,7 +2,7 @@
 
 https://a59715a.github.io/WebPages/direct.html?url=LTCexe:c:\\tch\\exe\\ClickOnceOpen.exe
 
-.reg
+.reg　
 Windows Registry Editor Version 5.00 
 [HKEY_CLASSES_ROOT\LTCexe] 
 @="URL:Your App Protocol" 
@@ -24,5 +24,5 @@ Windows Registry Editor Version 5.00
 "AutoLaunchProtocolsFromOrigins"="[{\"protocol\": \"iehttp\",\"allowed_origins\": [\"*\"]}]" 
 
 
-.bat
+.bat　
 copy \\HISSVR\TCHEXE$\EXE\ClickOnceOpen.exe c:\tch\exe\ClickOnceOpen.exe
